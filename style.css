@@ -1,0 +1,191 @@
+/* common css start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 1170px;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .light {
+    background-color: rgb(116, 115, 115);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .light button {
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 4px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 120px;
+    border-radius: 10px;
+    color: rgb(5, 148, 243);
+  }
+
+  
+  .count {
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .count button {
+    padding: 7px 20px;
+    cursor: pointer;
+    border: 2px solid rgb(61, 61, 60);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 120px;
+    border-radius: 10px;
+    color: rgb(56, 54, 54);
+    font-size: 30px;
+  }
+  
+  .count input {
+    margin-top: 120px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  
+  .clckhere {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(156, 245, 121);
+  }
+  
+  .clckhere button {
+    padding: 7px 20px;
+    cursor: pointer;
+    border: 4px solid rgb(241, 19, 19);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 120px;
+    border-radius: 10px;
+    color: black;
+    font-size: 30px;
+  }
+
+  
+  #back{
+    background-color: rgb(253, 188, 188);
+    height: 100vh;
+    text-align: center;
+    place-items: center;
+    display: grid;
+  }
+  
+  .range{
+    height: 80px;
+    width: 380px;
+    background: #b3fdf7;
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+  }
+  
+  #back .range .slidervalue{
+    position: relative;
+    width: 100%;
+  }
+  
+  #back .range .slidervalue span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+    top: -40px;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom;
+    transition: transform o.3s ease-in-out;
+    line-height: 55px;
+    z-index: 2;
+  }
+  
+  
+  #back .range .slidervalue span.show{
+    transform: translateX(-50%) scale(1);
+  }
+  
+  #back .range .slidervalue span:after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+    left: 50%;
+    background: #53b0e6;
+    border: 3px solid #fff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+  
+  #back .range .field{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  #back .range .field input{
+    height: 3px;
+    width: 100%;
+    background: #1bf1e0;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+  }
+  
+  #back .range .field .value{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  
+  #back .range .field input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #4b2cf7;
+    border-radius: 50%;
+    border: 1px solid #664AFF;
+    cursor: pointer;
+  }
+  
+  
+  #back .range .field .value .left{
+    left: -22px;
+  }
+  #back .range .field .value .right{
+    left: -43px;
+  }
